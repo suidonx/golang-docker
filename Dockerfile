@@ -1,5 +1,5 @@
 # development
-FROM golang:1.25-alpine AS development
+FROM golang:alpine AS development
 
 RUN go install github.com/air-verse/air@latest
 
