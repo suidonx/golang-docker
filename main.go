@@ -153,6 +153,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer db.Close()
 
 	pingErr := db.Ping()
 	if pingErr != nil {
